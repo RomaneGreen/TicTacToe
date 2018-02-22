@@ -1,0 +1,54 @@
+$bac-color:#3D5A6C;
+$sec-color:#8DE969;
+$tex-color:#EDEDED;
+
+.headers{
+background-color: $bac-color;
+margin:0 auto;
+    .tlist{
+      color: $sec-color;
+      text-align: center;
+      
+    }
+        .sup{
+            
+            @extend .tlist;
+        }
+    
+}
+
+
+
+
+*{
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+// gameboard
+
+
+td {
+    border: 1px solid black;
+    padding:4rem;
+    font-size:2rem;
+    margin:auto;
+  }
+  
+  
+  .rocks {
+    border: 1px solid black;
+    padding:4rem;
+    font-size:2rem;
+    color:red;
+  }
