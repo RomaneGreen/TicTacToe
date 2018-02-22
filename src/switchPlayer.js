@@ -24,7 +24,9 @@ function makeMove(){
    
     switchxy();
      if(checkIfWon() == true){
-       window.location.reload();
+         
+       location.reload();
+       
      }
      else 
     if(this.innerHTML == '') {

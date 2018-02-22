@@ -100,6 +100,8 @@
       ){
       
      document.getElementById('options').innerHTML = 'Game Over '+document.turn+" wins";
+     alert('Game Over '+document.turn+" wins");
+     location.reload();
      return true;
    }else  {
      
@@ -122,7 +124,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__(4);
 
-alert("hi");
+
 // make turns switch between X and O
 document.turn = 'X';
 
@@ -170,7 +172,9 @@ function makeMove(){
    
     switchxy();
      if(Object(__WEBPACK_IMPORTED_MODULE_0__checkWinner__["a" /* default */])() == true){
-       window.location.reload();
+         
+       location.reload();
+       
      }
      else 
     if(this.innerHTML == '') {
@@ -270,7 +274,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, ".headers {\n  background-color: #3D5A6C;\n  margin: 0 auto; }\n  .headers .tlist, .headers .sup {\n    color: #8DE969;\n    text-align: center; }\n\n* {\n  margin: 0 auto;\n  box-sizing: border-box; }\n\ntd {\n  border: 1px solid black;\n  padding: 4rem;\n  font-size: 2rem;\n  margin: auto; }\n\n.rocks {\n  border: 1px solid black;\n  padding: 4rem;\n  font-size: 2rem;\n  color: red; }\n", ""]);
+exports.push([module.i, "body {\n  background: #EDE574;\n  /* fallback for old browsers */\n  background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: linear-gradient(to right, #E1F5C4, #EDE574);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n.headers {\n  background-color: #3D5A6C;\n  margin: 0 auto; }\n  .headers .tlist, .headers .sup {\n    color: #EDE574;\n    text-align: center;\n    font-family: 'Ubuntu', sans-serif; }\n\nbody #options, body #board {\n  font-family: 'Ubuntu', sans-serif; }\n\n* {\n  margin: 0 auto;\n  box-sizing: border-box; }\n\ntd {\n  border: 1px solid black;\n  padding: 3rem;\n  font-size: 1rem;\n  margin: auto;\n  position: relative; }\n\n.rocks {\n  border: 1px solid black;\n  padding: 3.5rem;\n  font-size: 1.5rem;\n  color: #0f0f0f;\n  position: relative;\n  left: 22rem; }\n", ""]);
 
 // exports
 

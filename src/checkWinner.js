@@ -30,6 +30,8 @@ export default (function checkIfWon(){
       ){
       
      document.getElementById('options').innerHTML = 'Game Over '+document.turn+" wins";
+     alert('Game Over '+document.turn+" wins");
+     location.reload();
      return true;
    }else  {
      

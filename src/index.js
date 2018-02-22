@@ -3,7 +3,7 @@ import checkIfWon from './checkWinner';
 import createGameBoard from './gameBoard';
 require('./main.scss');
 
-alert("hi");
+
 // make turns switch between X and O
 document.turn = 'X';
 

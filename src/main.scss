@@ -1,6 +1,14 @@
 $bac-color:#3D5A6C;
-$sec-color:#8DE969;
-$tex-color:#EDEDED;
+$sec-color:#EDE574;
+$tex-color:#EDE574;
+
+body{
+    background: #EDE574;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 
 .headers{
 background-color: $bac-color;
@@ -8,6 +16,7 @@ margin:0 auto;
     .tlist{
       color: $sec-color;
       text-align: center;
+      font-family: 'Ubuntu', sans-serif;
       
     }
         .sup{
@@ -17,6 +26,14 @@ margin:0 auto;
     
 }
 
+body{
+    #options{
+        font-family: 'Ubuntu', sans-serif;
+    }
+   #board{
+    @extend #options;
+   }
+}
 
 
 
@@ -38,17 +55,23 @@ margin:0 auto;
 // gameboard
 
 
+
 td {
     border: 1px solid black;
-    padding:4rem;
-    font-size:2rem;
+    padding:3rem;
+    font-size:1rem;
     margin:auto;
+    position: relative;
   }
   
   
   .rocks {
     border: 1px solid black;
-    padding:4rem;
-    font-size:2rem;
-    color:red;
+     padding:3.5rem;
+    font-size:1.5rem;
+    color:rgb(15, 15, 15);
+    position: relative;
+    left: 22rem;
   }
+
+  
