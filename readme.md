@@ -1,4 +1,4 @@
- #TicTacToe
+ # TicTacToe
 
 
 A javascript tic tac toe made with es6,scss and webpack
